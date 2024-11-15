@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <head>
+        <script src = "search.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <table>
+        <tr>
+            <td>
+                <input style = "text" id = "keyword">
+            </td>
+            <td>
+                <button type = "button" onclick = "search()">搜索</button>
+            </td>
+            <td>
+                <button type = "button" onclick = "clearSearch()">清除搜索</button>
+            </td>
+        </tr>
+    </table>
+    <p id = "content">
+        月亮渐渐升高了，爬上了柳梢头，又爬上了竹梢头。这时候，水面上泛起了一层银色的光，仿佛是无数的银鱼在水里跳跃。荷叶上的露珠，也变得晶莹剔透，像珍珠一样闪闪发光。荷塘四周一片寂静，只有远处偶尔传来几声蛙鸣，更显得夜色深沉。我站在荷塘边，静静地欣赏着这幅美丽的画面，心中涌起了一种难以言表的宁静与喜悦。
+    </p>
+    </body>
+    </html>
+
+
+    <!--    <script>
+        function search(){
+var result = document.getElementById("content").innerHTML;
+var keyword = document.getElementById("keyword").value;
+    var pos = result.indexOf(keyword);
+    while (pos != -1){
+    result.remove(pos, keyword.length);
+    result.insert(pos, "<span style = "background:yellow;">" + keyword + "</span>");
+    }
+    document.getElementById("content").innerHTML = result;
+}
+    </script>-->

@@ -1,0 +1,13 @@
+function l_move() {
+        var r_select = document.getElementById("right");
+        var r_option = r_select.getElementsByTagName("option")[r_select.selectedIndex];
+        var l_select = document.getElementById("left");
+        var l_options = l_select.getElementsByTagName("option");
+        var l_arrOptions = Array.from(l_options);
+        for (i = 0; i <= 5; i++) {
+            if (l_options[i].text == '') {
+                l_options[i].text = r_option.text;
+                r_option.text = '';
+            }
+        }
+    }

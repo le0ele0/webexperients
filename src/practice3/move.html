@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        select{
+        height:80px;
+        }
+        option{
+        width:70px;
+        }
+    </style>
+    <script src = "move.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label for="left">关键词:</label>
+        </td>
+        <td>
+            <select id="left" name="left" multiple>
+                <option>程序员</option>
+                <option>C++</option>
+                <option>Java</option>
+                <option>JavaScript</option>
+                <option>深度学习</option>
+                <option>区块链</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="move()">>></button>
+        </td>
+        <td>
+            <select id = "right" name = "right" multiple>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

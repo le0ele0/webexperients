@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class = "largest">
+    <div class = "tab">
+        <div class = "tab1">
+            <a style = "text-decoration:underline; color : blue;" onclick = "page1()">基本资料</a>
+        </div>
+        <div class = "tab2">
+            <a style = "text-decoration:underline; color:blue;" onclick = "page2()">职业理想</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head">
+
+            <div class="time">
+                <span id="year">0</span>
+                <span>年</span>
+                <span id="month">0</span>
+                <span>月</span>
+                <span id="day">0</span>
+                <span>日</span>
+                <span id="week">星期</span>
+                <span id="hour">0</span>
+                <span>:</span>
+                <span id="minute">0</span>
+                <span>:</span>
+                <span id="second">0</span>
+            </div>
+            <div class="search">
+                <table style = "float :right;">
+                    <tr>
+                        <td>
+                            <input type="search" id ="keyword" onchange = "clearing()">
+                        </td>
+                        <td>
+                            <button type = "button" onclick="search()" id = "search">搜索</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class = "body2" id = "body2">
+        </div>
+        <div class="body1" id = "body1">
+            <div class="r1">
+                个人基本资料
+            </div>
+            <div class="r2">
+                <form class = "form">
+                    <table style = "table-layout:fixed; width:620px;">
+                        <tr>
+                            <td>
+                                <label for = "name">昵称：</label>
+                                <input type="text" id="name">
+                            </td>
+                            <td>
+                                <label for = "e-mail">邮件：</label>
+                                <input type = "text" id="e-mail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for = "birthday">生日：</label>
+                                <input type="text" id="birthday">
+                            </td>
+                            <td>
+                                <label for = "age">年龄：</label>
+                                <input type = "text" id="age">
+                            </td>
+                        <tr>
+                        <td colspan="2">
+                            爱好：
+                            <input type="checkbox" id="reading" name = "hobby">
+                            <label for = "reading">阅读</label>
+                            <input type="checkbox" id="music" name = "hobby">
+                            <label for = "music">音乐</label>
+                            <input type="checkbox" id="sport" name = "hobby">
+                            <label for = "sport">运动</label>
+                            <input type="checkbox" id="movie" name = "hobby">
+                            <label for = "movie">电影</label>
+                            <input type="checkbox" id="food" name = "hobby">
+                            <label for = "food">美食</label>
+                            <input type="checkbox" id="shopping" name = "hobby">
+                            <label for = "shopping">网购</label>
+                            <button type = "button" onclick = "select_all()">全选</button>
+                            <button type = "button" onclick = "cancel_select_all()">取消全选</button>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>
+                                <label for = "education">学历：</label>
+                                <select name="education" id="education" style = "width :160px;">
+                                    <option value="高中">高中</option>
+                                    <option value="专科">专科</option>
+                                    <option value="本科">本科</option>
+                                    <option value="硕士">硕士</option>
+                                    <option value="博士">博士</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style = "float:left;">
+                        <tr>
+                            <td>
+                                关键词：
+                            </td>
+                            <td>
+                                <select name = "left" id = "left" style = "height:80px;" multiple>
+                                    <option>程序员</option>
+                                    <option>C++</option>
+                                    <option>Java</option>
+                                    <option>JavaScript</option>
+                                    <option>深度学习</option>
+                                    <option>区块链</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>
+                                    <button type = "button" class = "move_button" onclick="r_move()" >></button>
+                                </div>
+                                <div>
+                                    <button type = "button" class = "move_button" onclick="l_move()"><</button>
+                                </div>
+                                <div>
+                                    <button type = "button" class = "move_button" onclick="r_a_move()" >>></button>
+                                </div>
+                                <div>
+                                    <button type = "button" class = "move_button" onclick="l_a_move()" ><<</button>
+                                </div>
+                            </td>
+                            <td>
+                                <select name = "right" id = "right" style = "height:80px;" multiple>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style = "float:right; margin-top:65px;margin-right:5px;">
+                        <button type = "reset" onclick = "l_a_move()">重置</button>
+                        <button type = "submit" onclick ="check()">提交</button>
+                    </div>
+                </form>
+                <div class = "photo" >
+                    <img src = "pictures/teto.png" style = "width:160px;">
+                    <input type="file">
+                </div>
+            </div>
+            <div class="r3">
+                <p>
+                    1.权利人对涉嫌侵权内容拥有商标权、著作权和/或其他依法可以行使权力的权属证明。<br>
+                    2.请充分、明确地描述确信被侵犯了权利人合法权益的内容并请提供非法登载该作品的第三方地址<br>
+                    3.请指明涉嫌侵权网页的哪些内容侵犯了第2项中列明的权利人的合法权益。<br>
+                    4.请提供权利人的具体的联络信息，包括姓名、身份证或护照复印件（对自然人）、单位登记证明复印件（对单位）、通信地址、电话号码、传真和电子邮件。<br>
+                    5.请提供涉嫌侵权内容在信息网络上的位置（如指明您举报的含有侵权内容的出处，即：指网页地址或网页内的位置）以便我们与您举报的含有侵权内容的网页的所有权人/管理人联系。
+                </p>
+            </div>
+        </div>
+        <div class = "roll">
+            <img id = "slide-images" class = "slides" src = "pictures/slide1.png" alt = "harumakigohan">
+
+
+</div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
