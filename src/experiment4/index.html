@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>index</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src = "baseLayout.js"></script>
+  <script src = "menu.js"></script>
 </head>
 <body>
-$END$
+  <div id = "app">
+    <base-layout>
+
+    </base-layout>
+  </div>
+  <script>
+    const vm = Vue.createApp({
+      components:{
+       baseLayout,
+       menuComponent,
+      }
+    })
+    vm.mount("#app");
+
+  </script>
 </body>
 </html>

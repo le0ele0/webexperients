@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+.float-left{
+border: 1px solid black;
+float:left;
+height:calc(100%-50px);
+box-sizing:border-box;
+}
