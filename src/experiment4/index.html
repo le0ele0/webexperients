@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
     <title>index</title>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src = "baseLayout.js"></script>
-  <script src = "menu.js"></script>
-</head>
-<body>
-  <div id = "app">
-    <base-layout>
-
-    </base-layout>
-  </div>
-  <script>
-    const vm = Vue.createApp({
-      components:{
-       baseLayout,
-       menuComponent,
-      }
-    })
-    vm.mount("#app");
-
-  </script>
-</body>
+    <meta charset="UTF-8" />
+    <meta link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="baseLayout.js"></script>
+    <script src="menu.js"></script>
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <base-layout>
+        <template #up>welcome to shuilongjing</template>
+        <template #down-left>
+          <menu-component :menus="menus"></menu-component>
+          <template #down-main v-if="current_menu =='首页'">首页</template>
+          <template #down-main v-if="current_menu =='购物车'">购物车</template>
+          <template #down-main v-if="current_menu !='首页'&&current_menu !='购物车'">功能开发中</template>
+        </template>
+      </base-layout>
+    </div>
+    <script>
+      const vm = Vue.createApp({
+        data() {
+          return {
+            menus: menuList,
+            books: books_info,
+            current_menu:'首页'
+          };
+        },
+        components: {
+          baseLayout,
+          menuComponent,
+        },
+      });
+      vm.mount("#app");
+    </script>
+  </body>
 </html>

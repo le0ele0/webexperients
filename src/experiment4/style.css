@@ -1,6 +1,0 @@
-.float-left{
-border: 1px solid black;
-float:left;
-height:calc(100%-50px);
-box-sizing:border-box;
-}
