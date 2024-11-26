@@ -18,14 +18,15 @@
 
 </div>
 
-
+<!-- 第一个自己实现的组件中v-model双向绑定，上半部分是原生元素的应用，下半是自定义组件。 -->
 
 
 
 <script>
         const child ={
+            props:["modelValue"],
             template:`
-            <p @click= $emit('update:modelValue','hahahahaha') >{{msg}}</p>
+            <p @click= $emit('update:modelValue','hahahahaha') >{{modelValue}}</p>
             `
         }
         const vm = Vue.createApp({
