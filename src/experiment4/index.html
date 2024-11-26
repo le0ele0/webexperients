@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html style ="height:100%">
 <html lang="en">
   <head>
     <title>index</title>
@@ -7,6 +7,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="baseLayout.js"></script>
     <script src="menu.js"></script>
+    <script src="addMinusComponent.js"></script>
+    <script src="bookComponent.js"></script>
     <script src="data.js"></script>
   </head>
   <body>
@@ -16,7 +18,13 @@
         <template #down-left>
           <menu-component :menus="menus" class = "menu_ul_style" v-model = "current_menu"></menu-component>
         </template>
-          <template #down-main v-if="current_menu =='首页'">首页</template>
+          <template #down-main v-if="current_menu =='首页'">
+            <div>
+              <book-component  v-for="book in books" image-style = "image_style" book-style = "book_style" :book-info= "book" >
+                
+              </book-component >
+            </div>
+          </template>
           <template #down-main v-if="current_menu =='购物车'">购物车</template>
           <template #down-main v-if="current_menu !='首页'&&current_menu !='购物车'">功能开发中</template>
         </template>
@@ -34,6 +42,7 @@
         components: {
           baseLayout,
           menuComponent,
+          bookComponent,
         },
         methods: {
 

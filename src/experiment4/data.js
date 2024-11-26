@@ -39,7 +39,7 @@ const books_info=[
         price:39.9,
         author:"施耐庵",
         count:0,
-        path:"img/shuihu.jpg"
+        path:"img/shuihu.png"
     },
     
     {
@@ -47,7 +47,7 @@ const books_info=[
         price:39.9,
         author:"罗贯中",
         count:0,
-        path:"img/sanguo.jpg"
+        path:"img/sanguo.png"
     },
     
     {
@@ -55,7 +55,7 @@ const books_info=[
         price:39.9,
         author:"吴承恩",
         count:0,
-        path:"img/xiyou.jpg"
+        path:"img/xiyou.png"
     },
     
     {
@@ -63,7 +63,7 @@ const books_info=[
         price:39.9,
         author:"曹雪芹",
         count:0,
-        path:"img/honglou.jpg"
+        path:"img/honglou.png"
     },
     
     {
@@ -71,7 +71,7 @@ const books_info=[
         price:39.9,
         author:"余华",
         count:0,
-        path:"img/huozhe.jpg"
+        path:"img/huozhe.png"
     },
     
     {
@@ -79,7 +79,7 @@ const books_info=[
         price:39.9,
         author:"利奥",
         count:0,
-        path:"img/yipian.jpg"
+        path:"img/yipian.png"
     },
     
 
