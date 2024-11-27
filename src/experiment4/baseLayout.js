@@ -11,7 +11,7 @@
         <slot name = "down-left"></slot>
         </div>
 
-        <div style = "border: 1px solid black;float:left;height:100%;box-sizing:border-box; width:60%;">
+        <div style = "border: 1px solid black;float:left;height:100%;box-sizing:border-box; width:60%; overflow:auto;">
         <slot name = "down-main"></slot>
         </div>
 
