@@ -1,5 +1,5 @@
-<!DOCTYPE html style ="height:100%">
-<html lang="en">
+<!DOCTYPE>
+<html lang="en"  html style ="height:100%">
   <head>
     <title>index</title>
     <meta charset="UTF-8" />
@@ -14,7 +14,9 @@
   <body>
     <div id="app">
       <base-layout>
-        <template #up>welcome to shuilongjing</template>
+        <template #up >
+          <p style = "font-size: 40px; color: blue;  margin: 0; text-align: center;">欢迎来到贝斯特购物商城</p>
+        </template>
         <template #down-left>
           <menu-component :menus="menus" class = "menu_ul_style" v-model = "current_menu"></menu-component>
         </template>
