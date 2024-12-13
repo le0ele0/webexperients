@@ -30,7 +30,7 @@
             </div>
           </template>
           <template #down-main v-if="current_menu =='购物车'">
-            <good-cart v-model = "books"></good-cart>
+            <good-cart v-model = "books" :books = "books"></good-cart>
           </template>
           <template #down-main v-if="current_menu !='首页'&&current_menu !='购物车'">功能开发中</template>
           <template #down-right v-if="user!=Null">尊敬的{{user}}您好，欢迎来到本商城！</template>

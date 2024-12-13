@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d8b5dc-6920-437e-900c-17484f9cc8ac" name="更改" comment="删掉了多余文件">
-      <change beforePath="$PROJECT_DIR$/src/experiment4/img/honglou.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/img/honglou.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiment4/img/huozhe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/img/huozhe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiment4/img/sanguo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/img/sanguo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiment4/img/shuihu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/img/shuihu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiment4/img/xiyou.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/img/xiyou.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiment4/goodCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/goodCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiment4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

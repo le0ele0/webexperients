@@ -1,6 +1,6 @@
 
 	const goodCart = {
-        props:["modelValue"],
+        props:["modelValue","books"],
         emits:["update:modelValue"],
         template: `
         <div>
