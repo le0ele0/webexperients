@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="GB 2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户调查</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>反馈</h1>
+    </header>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="menu.html">美食列表</a></li>
+            <li><a href="feedback.html">反馈</a></li>
+        </ul>
+    <section>
+        <form>
+            <label for="username">网名:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="likedMusic">请选择你喜欢的美食:</label><br>
+            <input type="checkbox" name="likedMusic" value="摇滚乐">烧饼<br>
+            <input type="checkbox" name="likedMusic" value="爵士">小鱼汤<br>
+            <input type="checkbox" name="likedMusic" value="流行乐">烧牛肉<br><br>
+            
+            <label for="livingCity">请选择你居住的城市:</label><br>
+            <input type="radio" name="livingCity" value="北京">北京<br>
+            <input type="radio" name="livingCity" value="上海">上海<br>
+            <input type="radio" name="livingCity" value="广州">广州<br><br>
+            <label for="favoriteSite">请选择你平常的吃饭方式:</label>
+            <select name="favoriteSite" id="favoriteSite" multiple>
+                <option value="新浪">饭店</option>
+                <option value="雅虎">外卖</option>
+                <option value="搜狐">自己做</option>
+            </select><br><br>
+            
+            <label for="educationLevel">您的最高学历/学位:</label>
+            <select name="educationLevel" id="educationLevel">
+                <option value="博士后">博士后</option>
+                <option value="博士">博士</option>
+                <option value="硕士">硕士</option>
+                <option value="其他">其他</option>
+            </select><br><br>
+            
+            <label for="message">请留言:</label>
+            <textarea name="message" id="message" cols="70" rows="10"></textarea><br><br>
+            
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </form>
+    </section>
+</body>
+</html>
